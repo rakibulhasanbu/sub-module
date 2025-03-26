@@ -89,4 +89,4 @@ const Features03Page = () => {
   );
 };
 
-export default Features03Page;
+export { Features03Page };

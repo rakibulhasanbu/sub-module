@@ -80,4 +80,4 @@ const Features05Page = () => {
   );
 };
 
-export default Features05Page;
+export { Features05Page };

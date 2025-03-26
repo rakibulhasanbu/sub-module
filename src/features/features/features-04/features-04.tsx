@@ -91,4 +91,4 @@ const Features04Page = () => {
   );
 };
 
-export default Features04Page;
+export { Features04Page };

@@ -81,4 +81,4 @@ const Features06Page = () => {
   );
 };
 
-export default Features06Page;
+export { Features06Page };

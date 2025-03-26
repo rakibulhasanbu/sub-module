@@ -75,4 +75,4 @@ const Features01Page = () => {
   );
 };
 
-export default Features01Page;
+export { Features01Page };
