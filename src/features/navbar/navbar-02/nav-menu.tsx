@@ -25,8 +25,24 @@ const navItems = [
     href: "/pricing",
   },
   {
+    label: "FAQ",
+    href: "/faq",
+  },
+  {
+    label: "Testimonials",
+    href: "/testimonial",
+  },
+  {
+    label: "Timeline",
+    href: "/timeline",
+  },
+  {
     label: "Contact",
     href: "/contact",
+  },
+  {
+    label: "Footer",
+    href: "/footer",
   },
 ];
 

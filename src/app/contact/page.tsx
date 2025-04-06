@@ -1,10 +1,8 @@
 import RenderComponent from "@/components/RenderComponent";
-import Contact01Page from "@/features/contact/contact-01/contact-01";
-import Contact02Page from "@/features/contact/contact-02/contact-02";
-import Contact03Page from "@/features/contact/contact-03/contact-03";
+import { Contact01, Contact02, Contact03 } from "@/features/contact";
 
 const ContactPage = () => {
-  const components = [Contact01Page, Contact02Page, Contact03Page];
+  const components = [Contact01, Contact02, Contact03];
   return <RenderComponent components={components} />;
 };
 

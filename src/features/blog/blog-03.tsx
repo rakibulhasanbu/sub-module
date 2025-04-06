@@ -73,7 +73,7 @@ const categories = [
   },
 ];
 
-const Blog03Page = () => {
+const Blog03 = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-10 lg:py-16 px-6 xl:px-0 flex flex-col lg:flex-row items-start gap-12">
       <div>
@@ -143,4 +143,4 @@ const Blog03Page = () => {
   );
 };
 
-export default Blog03Page;
+export { Blog03 };

@@ -96,4 +96,4 @@ const Pricing02 = () => {
   );
 };
 
-export default Pricing02;
+export { Pricing02 };

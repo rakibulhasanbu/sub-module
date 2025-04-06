@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select";
 import { ChevronRight } from "lucide-react";
 
-const Blog02Page = () => {
+const Blog02 = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
       <div className="flex items-end justify-between">
@@ -62,4 +62,4 @@ const Blog02Page = () => {
   );
 };
 
-export default Blog02Page;
+export { Blog02 };

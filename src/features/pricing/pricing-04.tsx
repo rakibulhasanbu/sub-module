@@ -149,4 +149,4 @@ const Pricing04 = () => {
   );
 };
 
-export default Pricing04;
+export { Pricing04 };

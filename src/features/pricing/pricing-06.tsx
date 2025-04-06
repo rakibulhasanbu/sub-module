@@ -99,4 +99,4 @@ const Pricing06 = () => {
   );
 };
 
-export default Pricing06;
+export { Pricing06 };
