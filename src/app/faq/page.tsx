@@ -15,17 +15,17 @@ import {
     faq06Data,
     faq07Data,
 } from "@/features/faq";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const FAQPage = () => {
     const components = [
-        { comp: FAQ01, data: faq01Data as ISection },
-        { comp: FAQ02, data: faq02Data as ISection },
-        { comp: FAQ03, data: faq03Data as ISection },
-        { comp: FAQ04, data: faq04Data as ISection },
-        { comp: FAQ05, data: faq05Data as ISection },
-        { comp: FAQ06, data: faq06Data as ISection },
-        { comp: FAQ07, data: faq07Data as ISection },
+        { comp: FAQ01, data: faq01Data as Section },
+        { comp: FAQ02, data: faq02Data as Section },
+        { comp: FAQ03, data: faq03Data as Section },
+        { comp: FAQ04, data: faq04Data as Section },
+        { comp: FAQ05, data: faq05Data as Section },
+        { comp: FAQ06, data: faq06Data as Section },
+        { comp: FAQ07, data: faq07Data as Section },
     ];
     return <RenderComponent components={components} />;
 };

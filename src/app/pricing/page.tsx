@@ -13,16 +13,16 @@ import {
     Pricing06,
     pricing06Data,
 } from "@/features/pricing";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const PricingPage = () => {
     const components = [
-        { comp: Pricing01, data: pricing01Data as ISection },
-        { comp: Pricing02, data: pricing02Data as ISection },
-        { comp: Pricing03, data: pricing03Data as ISection },
-        { comp: Pricing04, data: pricing04Data as ISection },
-        { comp: Pricing05, data: pricing05Data as ISection },
-        { comp: Pricing06, data: pricing06Data as ISection },
+        { comp: Pricing01, data: pricing01Data as Section },
+        { comp: Pricing02, data: pricing02Data as Section },
+        { comp: Pricing03, data: pricing03Data as Section },
+        { comp: Pricing04, data: pricing04Data as Section },
+        { comp: Pricing05, data: pricing05Data as Section },
+        { comp: Pricing06, data: pricing06Data as Section },
     ];
     return <RenderComponent components={components} />;
 };

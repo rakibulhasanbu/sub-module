@@ -1,8 +1,8 @@
-import { ISection } from "@/type";
+import { Section } from "@/type";
 import { ComponentType } from "react";
 
 // Make the interface generic to accept any data type
-interface ComponentWithData<T = ISection> {
+interface ComponentWithData<T = Section> {
     comp: ComponentType<{ data: T }>;
     data: T;
 }

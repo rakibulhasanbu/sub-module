@@ -7,13 +7,13 @@ import {
     Contact03,
     contact03Data,
 } from "@/features/contact";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const ContactPage = () => {
     const components = [
-        { comp: Contact01, data: contact01Data as ISection },
-        { comp: Contact02, data: contact02Data as ISection },
-        { comp: Contact03, data: contact03Data as ISection },
+        { comp: Contact01, data: contact01Data as Section },
+        { comp: Contact02, data: contact02Data as Section },
+        { comp: Contact03, data: contact03Data as Section },
     ];
     return <RenderComponent components={components} />;
 };

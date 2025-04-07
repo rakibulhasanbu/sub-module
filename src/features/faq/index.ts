@@ -13,7 +13,13 @@ import {
     faq05Data,
     faq06Data,
     faq07Data,
+    faq08Data,
+    faq09Data,
+    faq10Data,
 } from "@/features/faq/data";
+import { FAQ08 } from "@/features/faq/faq-08";
+import { FAQ09 } from "@/features/faq/faq-09";
+import { FAQ10 } from "@/features/faq/faq-10";
 
 export {
     FAQ01,
@@ -30,4 +36,10 @@ export {
     faq06Data,
     FAQ07,
     faq07Data,
+    FAQ08,
+    faq08Data,
+    FAQ09,
+    faq09Data,
+    FAQ10,
+    faq10Data,
 };

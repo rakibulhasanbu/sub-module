@@ -13,16 +13,16 @@ import {
     Testimonial06,
     testimonial06Data,
 } from "@/features/testimonial";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const TestimonialPage = () => {
     const components = [
-        { comp: Testimonial01, data: testimonial01Data as ISection },
-        { comp: Testimonial02, data: testimonial02Data as ISection },
-        { comp: Testimonial03, data: testimonial03Data as ISection },
-        { comp: Testimonial04, data: testimonial04Data as ISection },
-        { comp: Testimonial05, data: testimonial05Data as ISection },
-        { comp: Testimonial06, data: testimonial06Data as ISection },
+        { comp: Testimonial01, data: testimonial01Data as Section },
+        { comp: Testimonial02, data: testimonial02Data as Section },
+        { comp: Testimonial03, data: testimonial03Data as Section },
+        { comp: Testimonial04, data: testimonial04Data as Section },
+        { comp: Testimonial05, data: testimonial05Data as Section },
+        { comp: Testimonial06, data: testimonial06Data as Section },
     ];
     return <RenderComponent components={components} />;
 };

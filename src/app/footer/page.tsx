@@ -11,15 +11,15 @@ import {
     Footer05,
     footer05Data,
 } from "@/features/footer";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const FooterPage = () => {
     const components = [
-        { comp: Footer01, data: footer01Data as ISection },
-        { comp: Footer02, data: footer02Data as ISection },
-        { comp: Footer03, data: footer03Data as ISection },
-        { comp: Footer04, data: footer04Data as ISection },
-        { comp: Footer05, data: footer05Data as ISection },
+        { comp: Footer01, data: footer01Data as Section },
+        { comp: Footer02, data: footer02Data as Section },
+        { comp: Footer03, data: footer03Data as Section },
+        { comp: Footer04, data: footer04Data as Section },
+        { comp: Footer05, data: footer05Data as Section },
     ];
     return <RenderComponent components={components} />;
 };

@@ -11,7 +11,13 @@ import {
     testimonial04Data,
     testimonial05Data,
     testimonial06Data,
+    testimonial07Data,
+    testimonial08Data,
+    testimonial09Data,
 } from "@/features/testimonial/data";
+import { Testimonial07 } from "@/features/testimonial/testimonial-07";
+import { Testimonial08 } from "@/features/testimonial/testimonial-08";
+import { Testimonial09 } from "@/features/testimonial/testimonial-09";
 
 export {
     Testimonial01,
@@ -26,4 +32,10 @@ export {
     testimonial05Data,
     Testimonial06,
     testimonial06Data,
+    Testimonial07,
+    testimonial07Data,
+    Testimonial08,
+    testimonial08Data,
+    Testimonial09,
+    testimonial09Data,
 };

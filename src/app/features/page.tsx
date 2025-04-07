@@ -5,12 +5,12 @@ import {
     features01Data,
     features02Data,
 } from "@/features/features";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const FeaturesPage = () => {
     const components = [
-        { comp: Features01, data: features01Data as ISection },
-        { comp: Features02, data: features02Data as ISection },
+        { comp: Features01, data: features01Data as Section },
+        { comp: Features02, data: features02Data as Section },
     ];
 
     return <RenderComponent components={components} />;

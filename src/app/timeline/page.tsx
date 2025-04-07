@@ -15,17 +15,17 @@ import {
     Timeline07,
     timeline07Data,
 } from "@/features/timeline";
-import { ISection } from "@/type";
+import { Section } from "@/type";
 
 const TimelinePage = () => {
     const components = [
-        { comp: Timeline01, data: timeline01Data as ISection },
-        { comp: Timeline02, data: timeline02Data as ISection },
-        { comp: Timeline03, data: timeline03Data as ISection },
-        { comp: Timeline04, data: timeline04Data as ISection },
-        { comp: Timeline05, data: timeline05Data as ISection },
-        { comp: Timeline06, data: timeline06Data as ISection },
-        { comp: Timeline07, data: timeline07Data as ISection },
+        { comp: Timeline01, data: timeline01Data as Section },
+        { comp: Timeline02, data: timeline02Data as Section },
+        { comp: Timeline03, data: timeline03Data as Section },
+        { comp: Timeline04, data: timeline04Data as Section },
+        { comp: Timeline05, data: timeline05Data as Section },
+        { comp: Timeline06, data: timeline06Data as Section },
+        { comp: Timeline07, data: timeline07Data as Section },
     ];
     return <RenderComponent components={components} />;
 };
