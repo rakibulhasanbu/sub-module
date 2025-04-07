@@ -1,26 +1,19 @@
 import RenderComponent from "@/components/RenderComponent";
 import {
-  Features01,
-  Features02,
-  Features03,
-  Features04,
-  Features05,
-  Features06,
-  Features07,
-} from "@/features/features";
-
-const FeaturesPage = () => {
-  const components = [
     Features01,
     Features02,
-    Features03,
-    Features04,
-    Features05,
-    Features06,
-    Features07,
-  ];
+    features01Data,
+    features02Data,
+} from "@/features/features";
+import { ISection } from "@/type";
 
-  return <RenderComponent components={components} />;
+const FeaturesPage = () => {
+    const components = [
+        { comp: Features01, data: features01Data as ISection },
+        { comp: Features02, data: features02Data as ISection },
+    ];
+
+    return <RenderComponent components={components} />;
 };
 
 export default FeaturesPage;
