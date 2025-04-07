@@ -12,6 +12,12 @@ import {
     testimonial05Data,
     Testimonial06,
     testimonial06Data,
+    Testimonial07,
+    testimonial07Data,
+    Testimonial08,
+    testimonial08Data,
+    Testimonial09,
+    testimonial09Data,
 } from "@/features/testimonial";
 import { Section } from "@/type";
 
@@ -23,6 +29,9 @@ const TestimonialPage = () => {
         { comp: Testimonial04, data: testimonial04Data as Section },
         { comp: Testimonial05, data: testimonial05Data as Section },
         { comp: Testimonial06, data: testimonial06Data as Section },
+        { comp: Testimonial07, data: testimonial07Data as Section },
+        { comp: Testimonial08, data: testimonial08Data as Section },
+        { comp: Testimonial09, data: testimonial09Data as Section },
     ];
     return <RenderComponent components={components} />;
 };
