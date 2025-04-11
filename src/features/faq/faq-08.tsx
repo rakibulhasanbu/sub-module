@@ -1,7 +1,6 @@
 "use client";
 
 import { Props } from "@/type";
-import { useState } from "react";
 
 const categories = [
     { id: "general", name: "General" },
@@ -11,7 +10,7 @@ const categories = [
 ];
 
 const FAQ08 = ({ data }: Props) => {
-    const [activeTab, setActiveTab] = useState(categories[0].id);
+    // const [activeTab, setActiveTab] = useState(categories[0].id);
 
     const SectionList = data?.sectionList;
     // Group FAQs by category
@@ -47,11 +46,11 @@ const FAQ08 = ({ data }: Props) => {
                             <button
                                 key={category.id}
                                 className={`px-6 py-3 text-sm font-medium transition-colors sm:text-base ${
-                                    activeTab === category.id
+                                    "general" === category.id
                                         ? "border-b-2 border-primary text-primary"
                                         : "text-gray-600 hover:text-gray-900"
                                 }`}
-                                onClick={() => setActiveTab(category.id)}
+                                // onClick={() => setActiveTab(category.id)}
                             >
                                 {category.name}
                             </button>
@@ -66,7 +65,7 @@ const FAQ08 = ({ data }: Props) => {
                                 <div
                                     key={category.id}
                                     className={
-                                        activeTab === category.id
+                                        "general" === category.id
                                             ? "block"
                                             : "hidden"
                                     }

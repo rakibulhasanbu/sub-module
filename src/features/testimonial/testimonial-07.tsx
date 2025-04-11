@@ -1,45 +1,43 @@
 "use client";
 
 import { Props } from "@/type";
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const Testimonial07 = ({ data }: Props) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [autoplay, setAutoplay] = useState(true);
+    // const [currentIndex, setCurrentIndex] = useState(0);
+    // const [autoplay, setAutoplay] = useState(true);
 
     const sectionList = data?.sectionList || [];
     // Autoplay functionality
-    useEffect(() => {
-        if (!autoplay) return;
+    // useEffect(() => {
+    //     if (!autoplay) return;
 
-        const interval = setInterval(() => {
-            setCurrentIndex(
-                (prevIndex) => (prevIndex + 1) % sectionList.length
-            );
-        }, 5000);
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex(
+    //             (prevIndex) => (prevIndex + 1) % sectionList.length
+    //         );
+    //     }, 5000);
 
-        return () => clearInterval(interval);
-    }, [autoplay, sectionList.length]);
+    //     return () => clearInterval(interval);
+    // }, [autoplay, sectionList.length]);
 
-    const goToPrevious = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? sectionList.length - 1 : prevIndex - 1
-        );
-        setAutoplay(false);
-    };
+    // const goToPrevious = () => {
+    //     setCurrentIndex((prevIndex) =>
+    //         prevIndex === 0 ? sectionList.length - 1 : prevIndex - 1
+    //     );
+    //     setAutoplay(false);
+    // };
 
-    const goToNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % sectionList.length);
-        setAutoplay(false);
-    };
+    // const goToNext = () => {
+    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % sectionList.length);
+    //     setAutoplay(false);
+    // };
 
-    const goToSlide = (index: number) => {
-        setCurrentIndex(index);
-        setAutoplay(false);
-    };
+    // const goToSlide = (index: number) => {
+    //     setCurrentIndex(index);
+    //     setAutoplay(false);
+    // };
 
     return (
         <section className="bg-white py-16">
@@ -63,11 +61,11 @@ const Testimonial07 = ({ data }: Props) => {
                     <div className="overflow-hidden">
                         <div
                             className="flex transition-transform duration-500 ease-in-out"
-                            style={{
-                                transform: `translateX(-${
-                                    currentIndex * 100
-                                }%)`,
-                            }}
+                            // style={{
+                            //     transform: `translateX(-${
+                            //         currentIndex * 100
+                            //     }%)`,
+                            // }}
                         >
                             {sectionList.map((testimonial) => (
                                 <div
@@ -110,14 +108,14 @@ const Testimonial07 = ({ data }: Props) => {
 
                     {/* Navigation Arrows */}
                     <button
-                        onClick={goToPrevious}
+                        // onClick={goToPrevious}
                         className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-2 text-gray-700 shadow-md hover:text-primary focus:outline-none md:-translate-x-6"
                         aria-label="Previous testimonial"
                     >
                         <ChevronLeft className="h-6 w-6" />
                     </button>
                     <button
-                        onClick={goToNext}
+                        // onClick={goToNext}
                         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-white p-2 text-gray-700 shadow-md hover:text-primary focus:outline-none md:translate-x-6"
                         aria-label="Next testimonial"
                     >
@@ -129,11 +127,12 @@ const Testimonial07 = ({ data }: Props) => {
                         {sectionList.map((_, index) => (
                             <button
                                 key={index}
-                                onClick={() => goToSlide(index)}
+                                // onClick={() => goToSlide(index)}
                                 className={`h-2 w-2 rounded-full transition-colors ${
-                                    currentIndex === index
-                                        ? "bg-primary"
-                                        : "bg-gray-300"
+                                    // currentIndex === index
+                                    //     ? "bg-primary"
+                                    //     : "bg-gray-300"
+                                    ""
                                 }`}
                                 aria-label={`Go to slide ${index + 1}`}
                             />

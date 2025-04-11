@@ -9,7 +9,6 @@ import {
     Shield,
     Users,
 } from "lucide-react";
-import { useState } from "react";
 
 // Define categories with icons
 const categories = [
@@ -41,8 +40,8 @@ const categories = [
 ];
 
 const FAQ10 = ({ data }: Props) => {
-    const [openCategory, setOpenCategory] = useState(categories[0].id);
-    const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
+    // const [openCategory, setOpenCategory] = useState(categories[0].id);
+    // const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
     const sectionList = data?.sectionList;
     // Group FAQs by category
@@ -53,16 +52,16 @@ const FAQ10 = ({ data }: Props) => {
         return acc;
     }, {} as Record<string, typeof sectionList>);
 
-    const toggleCategory = (categoryId: string) => {
-        setOpenCategory(categoryId);
-    };
+    // const toggleCategory = (categoryId: string) => {
+    //     setOpenCategory(categoryId);
+    // };
 
-    const toggleItem = (id: string) => {
-        setOpenItems((prev) => ({
-            ...prev,
-            [id]: !prev[id],
-        }));
-    };
+    // const toggleItem = (id: string) => {
+    //     setOpenItems((prev) => ({
+    //         ...prev,
+    //         [id]: !prev[id],
+    //     }));
+    // };
 
     return (
         <section className="bg-white py-16">
@@ -93,13 +92,13 @@ const FAQ10 = ({ data }: Props) => {
                                     <button
                                         key={category.id}
                                         className={`flex w-full items-center rounded-md px-3 py-2 text-left transition-colors ${
-                                            openCategory === category.id
+                                            "general" === category.id
                                                 ? "bg-primary text-primary-foreground"
                                                 : "text-gray-700 hover:bg-gray-100"
                                         }`}
-                                        onClick={() =>
-                                            toggleCategory(category.id)
-                                        }
+                                        // onClick={() =>
+                                        //     toggleCategory(category.id)
+                                        // }
                                     >
                                         <span className="mr-2">
                                             {category.icon}
@@ -120,7 +119,7 @@ const FAQ10 = ({ data }: Props) => {
                                     <div
                                         key={category.id}
                                         className={
-                                            openCategory === category.id
+                                            "general" === category.id
                                                 ? "block"
                                                 : "hidden"
                                         }
@@ -141,16 +140,14 @@ const FAQ10 = ({ data }: Props) => {
                                                     >
                                                         <button
                                                             className="flex w-full items-center justify-between px-6 py-4 text-left font-medium text-gray-900 hover:text-primary focus:outline-none"
-                                                            onClick={() =>
-                                                                toggleItem(
-                                                                    faq.id
-                                                                )
-                                                            }
-                                                            aria-expanded={
-                                                                openItems[
-                                                                    faq.id
-                                                                ]
-                                                            }
+                                                            // onClick={() =>
+                                                            //     toggleItem(faq.id)
+                                                            // }
+                                                            // aria-expanded={
+                                                            //      openItems[
+                                                            //         faq.id
+                                                            //     ]
+                                                            // }
                                                             aria-controls={`faq-content-${faq.id}`}
                                                         >
                                                             <span>
@@ -158,22 +155,24 @@ const FAQ10 = ({ data }: Props) => {
                                                             </span>
                                                             <ChevronDown
                                                                 className={`h-5 w-5 transition-transform ${
-                                                                    openItems[
-                                                                        faq.id
-                                                                    ]
-                                                                        ? "rotate-180"
-                                                                        : ""
+                                                                    // openItems[
+                                                                    //     faq.id
+                                                                    // ]
+                                                                    //     ? "rotate-180"
+                                                                    //     : ""
+                                                                    ""
                                                                 }`}
                                                             />
                                                         </button>
                                                         <div
                                                             id={`faq-content-${faq.id}`}
                                                             className={`overflow-hidden px-6 transition-all duration-300 ${
-                                                                openItems[
-                                                                    faq.id
-                                                                ]
-                                                                    ? "max-h-96 pb-6"
-                                                                    : "max-h-0"
+                                                                // openItems[
+                                                                //     faq.id
+                                                                // ]
+                                                                //     ? "max-h-96 pb-6"
+                                                                //     : "max-h-0"
+                                                                ""
                                                             }`}
                                                         >
                                                             <p className="text-gray-600">

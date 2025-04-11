@@ -3,20 +3,21 @@
 import { Props } from "@/type";
 import { Play } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
 
 const Testimonial08 = ({ data }: Props) => {
     const sectionList = data?.sectionList || [];
 
-    const [activeVideo, setActiveVideo] = useState<string | null>(null);
+    // const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
-    const openVideo = (url: string) => {
-        setActiveVideo(url);
-    };
+    // const openVideo = (url: string) => {
+    //     setActiveVideo(url);
+    // };
 
-    const closeVideo = () => {
-        setActiveVideo(null);
-    };
+    // const closeVideo = () => {
+    //     setActiveVideo(null);
+    // };
+
+    const activeVideo = null;
 
     return (
         <section className="bg-gray-50 py-16">
@@ -59,10 +60,10 @@ const Testimonial08 = ({ data }: Props) => {
                                             className="h-48 w-full object-cover"
                                         />
                                         <button
-                                            onClick={() =>
-                                                testimonial.buttonUrl &&
-                                                openVideo(testimonial.buttonUrl)
-                                            }
+                                            // onClick={() =>
+                                            //     testimonial.buttonUrl &&
+                                            //     openVideo(testimonial.buttonUrl)
+                                            // }
                                             className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors hover:bg-black/40"
                                             aria-label="Play video"
                                         >
@@ -92,11 +93,11 @@ const Testimonial08 = ({ data }: Props) => {
                                 {testimonial.buttonText &&
                                     testimonial.buttonUrl && (
                                         <button
-                                            onClick={() =>
-                                                openVideo(
-                                                    testimonial.buttonUrl!
-                                                )
-                                            }
+                                            // onClick={() =>
+                                            //     openVideo(
+                                            //         testimonial.buttonUrl!
+                                            //     )
+                                            // }
                                             className="flex items-center font-medium text-primary"
                                         >
                                             <Play className="mr-1 h-4 w-4" />
@@ -113,14 +114,14 @@ const Testimonial08 = ({ data }: Props) => {
             {activeVideo && (
                 <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-                    onClick={closeVideo}
+                    // onClick={closeVideo}
                 >
                     <div
                         className="relative w-full max-w-4xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button
-                            onClick={closeVideo}
+                            // onClick={closeVideo}
                             className="absolute -top-10 right-0 text-white hover:text-gray-300"
                             aria-label="Close video"
                         >
@@ -141,7 +142,7 @@ const Testimonial08 = ({ data }: Props) => {
                         </button>
                         <div className="relative h-0 overflow-hidden rounded-lg pb-[56.25%]">
                             <iframe
-                                src={activeVideo.replace("watch?v=", "embed/")}
+                                // src={activeVideo.replace("watch?v=", "embed/")}
                                 title="Video testimonial"
                                 className="absolute left-0 top-0 h-full w-full"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,29 +1,27 @@
 "use client";
 
 import { Props } from "@/type";
-import { ChevronDown, Search } from "lucide-react";
-import { useMemo } from "react";
-import { useState } from "react";
+import { Search } from "lucide-react";
 
 const FAQ09 = ({ data }: Props) => {
-    const [searchQuery, setSearchQuery] = useState("");
-    const [openItem, setOpenItem] = useState<string | null>(null);
+    // const [searchQuery, setSearchQuery] = useState("");
+    // const [openItem, setOpenItem] = useState<string | null>(null);
 
-    const toggleItem = (id: string) => {
-        setOpenItem(openItem === id ? null : id);
-    };
+    // const toggleItem = (id: string) => {
+    //     setOpenItem(openItem === id ? null : id);
+    // };
 
     // Filter FAQs based on search query
-    const filteredFAQs = useMemo(() => {
-        if (!searchQuery.trim()) return data?.sectionList;
+    // const filteredFAQs = useMemo(() => {
+    //     if (!searchQuery.trim()) return data?.sectionList;
 
-        const query = searchQuery.toLowerCase();
-        return data?.sectionList?.filter(
-            (faq) =>
-                faq?.title?.toLowerCase().includes(query) ||
-                faq?.description?.toLowerCase().includes(query)
-        );
-    }, [searchQuery, data?.sectionList]);
+    //     const query = searchQuery.toLowerCase();
+    //     return data?.sectionList?.filter(
+    //         (faq) =>
+    //             faq?.title?.toLowerCase().includes(query) ||
+    //             faq?.description?.toLowerCase().includes(query)
+    //     );
+    // }, [searchQuery, data?.sectionList]);
 
     return (
         <section className="bg-gray-50 py-16">
@@ -50,14 +48,14 @@ const FAQ09 = ({ data }: Props) => {
                             type="text"
                             className="block w-full rounded-md border border-gray-300 bg-white py-3 pl-10 pr-3 leading-5 placeholder-gray-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                             placeholder="Search for questions..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
+                            // value={searchQuery}
+                            // onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
                 </div>
 
                 <div className="mx-auto max-w-3xl rounded-lg bg-white shadow-sm">
-                    {filteredFAQs && filteredFAQs.length > 0 ? (
+                    {/* {filteredFAQs && filteredFAQs.length > 0 ? (
                         filteredFAQs.map((faq) => (
                             <div
                                 key={faq.id}
@@ -107,7 +105,7 @@ const FAQ09 = ({ data }: Props) => {
                                 Clear search
                             </button>
                         </div>
-                    )}
+                    )} */}
                 </div>
 
                 {/* Contact support */}
