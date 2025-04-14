@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
-import { BackgroundPattern } from "@/features/hero/background-pattern";
+import { BackgroundPattern } from "../../features/hero/background-pattern";
 
 const Hero06 = () => {
   return (
