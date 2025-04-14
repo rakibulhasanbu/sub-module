@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Bengali } from "next/font/google";
 import "./globals.css";
-import Providers from "@/providers";
-import { Navbar02 } from "@/features/navbar/navbar-02/navbar-02";
+import Providers from "../providers";
+import { Navbar02 } from "../features/navbar/navbar-02/navbar-02";
+
 const notoSansBengali = Noto_Sans_Bengali({
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
