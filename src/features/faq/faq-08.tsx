@@ -1,5 +1,3 @@
-"use client";
-
 import { Props } from "../../type";
 
 const categories = [

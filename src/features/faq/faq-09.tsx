@@ -1,5 +1,3 @@
-"use client";
-
 import { Props } from "../../type";
 import { Search } from "lucide-react";
 
