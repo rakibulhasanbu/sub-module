@@ -7,7 +7,7 @@ type Props = {
   data?: Section;
 };
 
-const Banner01 = ({ data }: Props) => {
+export const Banner01 = ({ data }: Props) => {
   return (
     <div className="flex items-center justify-between gap-4">
       <div>
@@ -26,5 +26,3 @@ const Banner01 = ({ data }: Props) => {
     </div>
   );
 };
-
-export default Banner01;

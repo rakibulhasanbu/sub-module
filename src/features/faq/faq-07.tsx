@@ -2,8 +2,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-} from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+} from "../../components/ui/accordion";
+import { cn } from "../../lib/utils";
 import { Props } from "../../type";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { PlusIcon } from "lucide-react";

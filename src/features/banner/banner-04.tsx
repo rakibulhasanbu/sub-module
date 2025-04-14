@@ -6,7 +6,7 @@ type Props = {
   data?: Section;
 };
 
-const Banner04 = ({ data }: Props) => {
+export const Banner04 = ({ data }: Props) => {
   return (
     <div className="flex flex-col items-center justify-between gap-8 rounded-lg bg-white p-8 shadow-md md:flex-row">
       <div className="max-w-md">
@@ -31,5 +31,3 @@ const Banner04 = ({ data }: Props) => {
     </div>
   );
 };
-
-export default Banner04;

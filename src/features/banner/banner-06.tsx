@@ -6,7 +6,7 @@ type Props = {
   data?: Section;
 };
 
-const Banner06 = ({ data }: Props) => {
+export const Banner06 = ({ data }: Props) => {
   return (
     <div className="grid grid-cols-1 gap-8 rounded-lg bg-white p-8 shadow-md md:grid-cols-2">
       <div className="relative h-full min-h-[300px]">
@@ -59,5 +59,3 @@ const Banner06 = ({ data }: Props) => {
     </div>
   );
 };
-
-export default Banner06;

@@ -4,7 +4,7 @@ type Props = {
   data?: Section;
 };
 
-const Banner03 = ({ data }: Props) => {
+export const Banner03 = ({ data }: Props) => {
   return (
     <div
       className="relative h-[500px] w-full overflow-hidden rounded-lg bg-cover bg-center"
@@ -35,5 +35,3 @@ const Banner03 = ({ data }: Props) => {
     </div>
   );
 };
-
-export default Banner03;

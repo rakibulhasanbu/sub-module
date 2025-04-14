@@ -1,10 +1,10 @@
-import { Hero01 } from "../../features/hero/hero-01";
-import { Hero02 } from "../../features/hero/hero-02";
-import { Hero03 } from "../../features/hero/hero-03";
-import { Hero04 } from "../../features/hero/hero-04";
-import { Hero05 } from "../../features/hero/hero-05";
-import { Hero06 } from "../../features/hero/hero-06";
-import { Hero07 } from "../../features/hero/hero-07";
+import { Hero01 } from "./hero-01";
+import { Hero02 } from "./hero-02";
+import { Hero03 } from "./hero-03";
+import { Hero04 } from "./hero-04";
+import { Hero05 } from "./hero-05";
+import { Hero06 } from "./hero-06";
+import { Hero07 } from "./hero-07";
 import {
   hero01Data,
   hero02Data,
@@ -13,7 +13,7 @@ import {
   hero05Data,
   hero06Data,
   hero07Data,
-} from "../../features/hero/data";
+} from "./data";
 
 export {
   Hero01,
