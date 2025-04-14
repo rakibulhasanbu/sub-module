@@ -1,7 +1,7 @@
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import AnimatedGridPattern from "../../components/ui/animated-grid-pattern";
+import { Badge } from "../../components/ui/badge";
+import { Button } from "../../components/ui/button";
+import { cn } from "../../lib/utils";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 
 const Hero07 = () => {
