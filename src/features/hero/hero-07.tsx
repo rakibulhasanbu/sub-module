@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedGridPattern from "../../components/ui/animated-grid-pattern";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
